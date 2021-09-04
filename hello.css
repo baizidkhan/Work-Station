@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home_section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./img/bac-3.jpg');
+    background-position: center;
+    background-size: cover;
+    
+    /* border: 20px solid black; */
+}
+
+/* ########################## Navbar Styling ##############################  */
+
+.navbar{
+    position: fixed;
+    top: 0px;
+    /* background-color: #22b987; */
+    width: 100%;
+    height: 64px;
+}
+
+.nav_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.logo{
+    font-family: 'Sofia', cursive;
+    font-style: italic;
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.nav_items ul{
+    display: flex;
+}
+
+.nav_items ul li{
+    list-style: none;
+    margin-left: 50px;
+}
+
+.nav_items ul li a{
+    /* margin-left: 50px; */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.nav_items ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.nav_items ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+/* ######################## content styling ########################## */
+
+.content{
+    position: relative;
+    width: 100%;
+    top: 40%;
+    /* border: 40px solid black; */
+}
+
+
+.heading h1{
+    text-align: center;
+    font-size: 36px;
+    font-style: italic;
+    font-family: 'Sofia', cursive;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #ffffff;
+    /* border-bottom: 3px solid #22b987; */
+    border-radius: 2px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.social_media{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+    margin-top: 60px;
+    /* border: 2px solid black; */
+}
+
+.social_media .homo{
+    padding: 10px 20px 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    /* border: 2px solid red; */
+}
+
+.social_media .homo:hover{
+    /* background-color: #aaa; */
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    opacity: .6;
+    z-index: 1;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+.social_media .homo a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    /* border: 2px solid red; */
+}
+
+.social_media .homo .box{
+    position: relative;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    z-index: 9;
+    transition: all .2s ease-in-out;
+}
+
+.social_media .homo .box:hover{
+    background: #ffffff;
+    transform: translateY(-3px);
+    opacity: 1;
+}
+
+.social_media .homo .box .icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social_media .homo .box .icon i{
+    font-size: 23px;
+}
+
+.social_media .homo .name{
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 4px 0;
+}
+
+
+/* ######################## icon color styling ########################## */
+
+.fa-facebook-f{
+    color: #4267B2;
+}
+
+.fa-youtube{
+    color: #FF0000;
+}
+
+.fa-linkedin-in{
+    color: #0077b5;
+}
+
+.fa-github{
+    color: #171515;
+}
+
+.fa-envelope-open-text{
+    color: #ea6e35;
+}
+
+.fa-trello{
+    color: #4885ed;
+}
+
+.fa-wordpress{
+    color:  #21759b;
+}
+
+.fa-twitter{
+    color: #1DA1F2;
+}
+
+.fa-instagram{
+    color: #bc2a8d;
+}
+
+.fa-address-card{
+    color: #4267B2;
+}
+
+.fa-graduation-cap{
+    color: #222;
+}
+
+.fa-tv{
+    color: rgb(24, 131, 90);
+}
+
+.fa-battle-net{
+    color: #007bb8;
+}
