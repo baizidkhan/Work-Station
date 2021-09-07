@@ -6,7 +6,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow: auto;
 }
+
 
 .container{
     max-width: 1200px;
@@ -18,10 +20,9 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./img/bac-3.jpg');
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./img/bac-2.jpg');
     background-position: center;
     background-size: cover;
-    
     /* border: 20px solid black; */
 }
 
@@ -30,30 +31,35 @@
 .navbar{
     position: fixed;
     top: 0px;
-    /* background-color: #22b987; */
     width: 100%;
-    height: 64px;
+    height: 56px;
+    z-index: 9999;
+    opacity: 1;
+    /* background-color: #22b987; */
+    background-color: #fff;
 }
 
 .nav_items{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 64px;
+    height: 56px;
 }
 
 .logo{
     font-family: 'Sofia', cursive;
     font-style: italic;
     font-size: 32px;
-    color: #ffffff;
-    font-weight: 600;
+    /* color: #ffffff; */
+    color: #000000;
+    font-weight: 500;
     letter-spacing: 1px;
     cursor: pointer;
 }
 
 .nav_items ul{
     display: flex;
+    /* text-align: center; */
 }
 
 .nav_items ul li{
@@ -67,7 +73,8 @@
     text-transform: uppercase;
     font-weight: 500;
     font-size: 18px;
-    color: #ffffff;
+    color: #000000;
+    /* color: #ffffff; */
     letter-spacing: 1px;
 }
 
@@ -75,7 +82,7 @@
     content: '';
     width: 0;
     height: 2px;
-    background: #ffffff;
+    background: #000000;
     display: block;
     margin: auto;
     transition: all .3s ease-in-out;
@@ -109,7 +116,7 @@
     border-bottom: 3px solid #ffffff;
     /* border-bottom: 3px solid #22b987; */
     border-radius: 2px;
-    width: 300px;
+    width: 250px;
     margin: 0 auto;
 }
 
@@ -224,6 +231,10 @@
     color: #4267B2;
 }
 
+.fa-chrome{
+    color: #d80d0d;
+}
+
 .fa-graduation-cap{
     color: #222;
 }
@@ -234,4 +245,184 @@
 
 .fa-battle-net{
     color: #007bb8;
+}
+
+.fa-accusoft{
+    color: #1ba592;
+}
+
+.fa-edge{
+    color: #0f9be0;
+}
+
+
+/* ############################ development styling ############################  */
+
+.development{
+    max-width: 100vw;
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #ffffff;
+}
+
+
+/* #################### utility classes #######################  */
+
+.title{
+    text-align: center;
+    font-size: 38px;
+    font-style: italic;
+    font-family: 'Sofia', cursive;
+    font-weight: 600;
+    color: #22b987;
+    letter-spacing: 3px;
+    border-bottom: 3px solid #22b987;
+    border-radius: 2px;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.tutorial{
+    padding: 80px 0;
+    /* border: 2px solid black; */
+}
+
+.header{
+    width: 135px;
+    font-size: 32px;
+    font-style: italic;
+    font-family: 'Sofia', cursive;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border-bottom: 3px double #222;
+    /* text-align: center; */
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    margin-top: 50px;
+    /* border: 2px solid black; */
+}
+
+
+.top{
+    text-align: center;
+    /* width: 70px; */
+    /* border: 2px solid black; */
+    /* padding-top: 20px; */
+}
+
+.top .icon {
+    font-size: 50px;
+    color: #22b987;
+    /* padding-top: 5px; */
+}
+
+.wrap a .name-1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    font-family: 'Sofia', cursive;
+    letter-spacing: 1px;
+    /* text-align: center; */
+    /* border: 2px solid black; */
+}
+
+.wrap a span{
+    font-size: 16px;
+    letter-spacing: .4px;
+    font-weight: 400;
+}
+
+/* .wrap{
+    padding: 20px 30px;
+    box-shadow: 5px 5px 0px rgba(0,0,0,.1);
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}  */
+
+.wrap a{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    text-decoration: none;
+    padding: 15px;
+    border: 1px solid #22b98781;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+    /* background-color: #f7f7f7; */
+    /* box-shadow: 0px 0px 10px 20px rgba(0,0,0,.3); */
+}
+
+.wrap a:hover{
+    transform: translate(-15px);
+    border: 1px solid rgb(221, 221, 221);
+}
+
+
+
+/* ####################### tools styling #####################  */
+
+.header-2{
+    width: 230px;
+}
+
+.boxxer{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 20px;
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.bus{
+    padding: 20px;    
+    border: 1px solid #ddd;
+    border-radius: 2px 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    /* overflow: hidden; */
+}
+
+.bus:hover{
+    transform: translateY(-6px);
+}
+
+.bus a{
+    text-decoration: none;
+}
+
+.bus .icon-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #22b987;
+    margin:  0 auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 6px solid #22b987;
+    box-shadow: 0px 0px 7px rgba(0,0,0,0.27);
+    transition: all .2s ease-in-out;
+    /* text-align: center; */
+}
+
+.bus .icon-1:hover{
+    transform: translate(3px);
+}
+
+.bus .name-2{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    font-family: 'Sofia', cursive;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-top: 10px;
+    /* border: 2px solid black; */
 }
